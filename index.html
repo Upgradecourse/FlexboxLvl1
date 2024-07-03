@@ -1,41 +1,28 @@
-<!doctype html>
-<html>
-  <head>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <select id="selection" onchange="switchNavbar()">
-      <option value="option1">Option 1</option>
-      <option value="option2" selected>Option 2</option>
-    </select>
-    <h1>Kyle's Bakery</h1>
-    <div id="option1" class="hidden">
-      <h6>Navbar Option 1</h6>
-      <div class="navbar one">
-        <span class="mail">
-          <img src="https://mimo.app/i/mail-large.png" height="10" />
-        </span>
-        <span class="phone">
-          <img src="https://mimo.app/i/phone-large.png" height="10" />
-        </span>
-        <span class="home">Home</span>
-        <input class="search" type="text" placeholder="search">
-      </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Content Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
     </div>
-    <div id="option2">
-      <h6>Navbar Option 2</h6>
-      <div class="navbar two">
-        <span class="mail">
-          <img src="https://mimo.app/i/mail-large.png" height="10" />
-        </span>
-        <span class="phone">
-          <img src="https://mimo.app/i/phone-large.png" height="10" />
-        </span>
-        <span class="home">Home</span>
-        <input class="search" type="text" placeholder="search">
-      </div>
+    <div class="controls">
+        <label for="justify-content">Justify Content: </label>
+        <select id="justify-content">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="space-evenly">space-evenly</option>
+        </select>
     </div>
-  </body>
+    <script src="scripts.js"></script>
+</body>
 </html>
