@@ -1,22 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
 .container {
     display: flex;
-    height: 200px;
     border: 1px solid #ccc;
-    margin: 20px;
     padding: 10px;
-  }
-  
-  .item {
-    background-color: lightblue;
+    height: 200px;  /* Augmenté pour démontrer les effets du flex-wrap et align-content */
+    width: 300px;   /* Réduit pour démontrer les effets du wrapping */
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.item {
+    background-color: #007bff;
+    color: white;
     padding: 10px;
     margin: 5px;
-    border: 1px solid #333;
-  }
-  
-  .controls {
-    margin: 20px;
-  }
-  
-  .controls label {
-    margin-right: 10px;
-  }
+    border-radius: 5px;
+    flex: 0 0 150px;  /* Largeur fixe pour démontrer le wrapping */
+}
+
+.controls {
+    margin-top: 10px;
+}
+
+.controls div {
+    margin-bottom: 10px;
+}

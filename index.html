@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Justify Content Demo</title>
+    <title>Flexbox Demo</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,15 +13,44 @@
         <div class="item">Item 3</div>
     </div>
     <div class="controls">
-        <label for="justify-content">Justify Content: </label>
-        <select id="justify-content">
-            <option value="flex-start">flex-start</option>
-            <option value="flex-end">flex-end</option>
-            <option value="center">center</option>
-            <option value="space-between">space-between</option>
-            <option value="space-around">space-around</option>
-            <option value="space-evenly">space-evenly</option>
-        </select>
+        <div>
+            <label for="justify-content">Justify Content: </label>
+            <select id="justify-content">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+        </div>
+        <div>
+            <label for="align-items">Align Items: </label>
+            <select id="align-items">
+                <option value="stretch">stretch</option>
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="baseline">baseline</option>
+            </select>
+        </div>
+        <div>
+            <label for="flex-direction">Flex Direction: </label>
+            <select id="flex-direction">
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+            </select>
+        </div>
+        <div>
+            <label for="flex-wrap">Flex Wrap: </label>
+            <select id="flex-wrap">
+                <option value="nowrap">nowrap</option>
+                <option value="wrap">wrap</option>
+                <option value="wrap-reverse">wrap-reverse</option>
+            </select>
+        </div>
     </div>
     <script src="scripts.js"></script>
 </body>
