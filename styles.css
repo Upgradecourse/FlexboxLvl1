@@ -53,7 +53,7 @@ h1 {
 }
 
 .item {
-    flex: 1;
+    flex: 0;
 }
 
 .item-wrap {
