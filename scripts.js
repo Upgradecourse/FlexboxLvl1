@@ -1,24 +1,32 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const container = document.getElementById('container');
-  const justifyContentSelect = document.getElementById('justify-content');
-  const alignItemsSelect = document.getElementById('align-items');
-  const flexDirectionSelect = document.getElementById('flex-direction');
-  const flexWrapSelect = document.getElementById('flex-wrap');
+  const containerAlign = document.getElementById('container-align');
+  const justifyContentAlign = document.getElementById('justify-content-align');
+  const alignItemsAlign = document.getElementById('align-items-align');
+  const flexDirectionAlign = document.getElementById('flex-direction-align');
 
-  // Fonction pour mettre à jour les styles du container
-  const updateFlexContainer = () => {
-      container.style.justifyContent = justifyContentSelect.value;
-      container.style.alignItems = alignItemsSelect.value;
-      container.style.flexDirection = flexDirectionSelect.value;
-      container.style.flexWrap = flexWrapSelect.value;
+  const containerWrap = document.getElementById('container-wrap');
+  const justifyContentWrap = document.getElementById('justify-content-wrap');
+  const flexWrapWrap = document.getElementById('flex-wrap-wrap');
+
+  const updateFlexContainerAlign = () => {
+      containerAlign.style.justifyContent = justifyContentAlign.value;
+      containerAlign.style.alignItems = alignItemsAlign.value;
+      containerAlign.style.flexDirection = flexDirectionAlign.value;
   };
 
-  // Écouteurs d'événements pour les sélections
-  justifyContentSelect.addEventListener('change', updateFlexContainer);
-  alignItemsSelect.addEventListener('change', updateFlexContainer);
-  flexDirectionSelect.addEventListener('change', updateFlexContainer);
-  flexWrapSelect.addEventListener('change', updateFlexContainer);
+  const updateFlexContainerWrap = () => {
+      containerWrap.style.justifyContent = justifyContentWrap.value;
+      containerWrap.style.flexWrap = flexWrapWrap.value;
+  };
 
-  // Initialiser le style du container au chargement de la page
-  updateFlexContainer();
+  justifyContentAlign.addEventListener('change', updateFlexContainerAlign);
+  alignItemsAlign.addEventListener('change', updateFlexContainerAlign);
+  flexDirectionAlign.addEventListener('change', updateFlexContainerAlign);
+
+  justifyContentWrap.addEventListener('change', updateFlexContainerWrap);
+  flexWrapWrap.addEventListener('change', updateFlexContainerWrap);
+
+  // Initialiser les styles des conteneurs au chargement de la page
+  updateFlexContainerAlign();
+  updateFlexContainerWrap();
 });
